@@ -7,3 +7,88 @@ Version: 1.0
 Text Domain: artofanticorruption
 
 */
+@font-face {
+  font-family: "WeblySleek UI Semilight";
+  src: url("fonts/WeblySleek_UI_Semilight/weblysleekuisl.eot?") format("eot"), url("fonts/WeblySleek_UI_Semilight/weblysleekuisl.woff") format("woff"), url("fonts/WeblySleek_UI_Semilight/weblysleekuisl.ttf") format("truetype"), url("fonts/WeblySleek_UI_Semilight/weblysleekuisl.svg#WeblySleekUISemilight") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@media (min-width: 576px) and (orientation: landscape) {
+  html {
+    height: 100%;
+    width: 100%; } }
+
+body {
+  font-family: "WeblySleek UI Semilight"; }
+  @media (min-width: 576px) and (orientation: landscape) {
+    body {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: url("images/logoHq.png") no-repeat center center white;
+      background-size: 80% auto; } }
+  @media (min-width: 768px) {
+    body {
+      position: static;
+      background: none; } }
+
+#menuHome {
+  background: pink;
+  padding: 15px;
+  width: calc(100% - 15px);
+  height: 100%;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  z-index: 1000; }
+
+.homeLogo {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  overflow: hidden;
+  padding-left: 40px; }
+  @media (min-width: 576px) and (orientation: landscape) {
+    .homeLogo {
+      display: none; } }
+  @media (min-width: 768px) {
+    .homeLogo {
+      padding: 0px; } }
+  .homeLogo img {
+    width: calc(100% + 130px); }
+    @media (min-width: 768px) {
+      .homeLogo img {
+        max-width: 720px; } }
+
+.homeFooter {
+  z-index: 1; }
+  .homeFooter a span {
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    background: black; }
+
+.homeLogoTablet {
+  height: 700px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  transform: translateY(-50%);
+  top: 50%; }
+  .homeLogoTablet .innerMain {
+    width: 720px;
+    height: 100%;
+    background: url("images/mainpart.png") no-repeat left top transparent;
+    background-size: 100% auto; }
+  .homeLogoTablet .inner {
+    width: auto;
+    height: 100%;
+    flex-grow: 1; }
+  .homeLogoTablet .inner2 {
+    background: url("images/secondpart.png") no-repeat right top transparent;
+    background-size: auto 100%;
+    background-position: center left; }
+
+/*# sourceMappingURL=style.css.map */
