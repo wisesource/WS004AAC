@@ -19,15 +19,33 @@ Text Domain: artofanticorruption
 }
 
 html {
-
+	@media(min-width: 576px) and (orientation: landscape) {
+		height: 100%;
+		width: 100%;
+	}
 }
+
+
 
 body {
 	font-family:"WeblySleek UI Semilight";
 
+	@media(min-width: 576px) and (orientation: landscape) {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: url('images/logoHq.png') no-repeat center center white;
+		background-size: 80% auto;
+	}
+
+	@media(min-width: 768px) {
+		position: static;
+		background: none;
+	}
+
 }
 
-// Menu on homepage
+
 #menuHome {
 	background: pink;
 	padding: 15px;
@@ -37,25 +55,37 @@ body {
 	top: 0px; 
 	right: 0px;	
 	z-index: 1000;
-
-	@media (min-width: 1200px) {
-        display: block;
-        position: static;
-        display: block;
-        background: none;
-        text-align: right;
-        width: 100%;
-
-	}	
 }
 
-.languageSelector {
-	@media (min-width: 1200px) {
-		text-align: right;
+.homeLogo {
+	position: absolute;
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	overflow: hidden;
+	padding-left: 40px;
+
+
+
+	@media(min-width: 576px) and (orientation: landscape) {
+		display: none;
+	}
+
+	@media(min-width: 768px) {
+		padding: 0px;
+	}	
+
+	img {
+
+		width: calc(100% + 130px);
+
+		@media(min-width: 768px) {
+			max-width: 720px;
+		}		
 	}
 }
 
-// Footer styles on homepage
 .homeFooter {
 	z-index: 1;
 
@@ -70,12 +100,10 @@ body {
 	}
 }
 
-
-
-
 .homeLogoTablet {
 	height: 700px;
 	width: 100%;
+	display: flex;
 	justify-content: space-between;
 	position: absolute;
 	transform: translateY(-50%);
